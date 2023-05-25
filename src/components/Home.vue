@@ -10,6 +10,15 @@ const inspirations = [
     title: "Creator of VueUse",
     links: [{ icon: "github", link: "https://github.com/antfu" }],
   },
+  {
+    avatar: "https://github.com/neymarjimoh.png",
+    name: "Jimoh Adekunle",
+    title: "Backend Engineer",
+    links: [
+      { icon: "github", link: "https://github.com/neymarjimoh" },
+      { icon: "linkedin", link: "https://linkedin.com/in/jimoh-rildwan-adekunle-/" },
+    ],
+  },
 ];
 
 const creator = [

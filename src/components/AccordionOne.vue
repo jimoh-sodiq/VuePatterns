@@ -19,7 +19,7 @@ const toggleState = () => {
 <template>
   <details
     :open="open"
-    class="appearance-none break-words w-full group relative p-2 ring-gray-300 ring-[1.5px] rounded"
+    class="appearance-none h-fit break-words w-full group relative p-2 ring-gray-300 ring-[1.5px] rounded"
   >
     <summary
       class="appearance-none flex gap-x-2 group-open:mb-2 items-center cursor-pointer list-none"
