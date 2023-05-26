@@ -1,3 +1,4 @@
+
 # Get Started
 
 Vue is a popular JavaScript framework that is used to create single-page applications. It is known for its simplicity and flexibility, and it can be used to build a wide variety of applications. This reference provides a comprehensive overview of common patterns in Vue, including how to use components, directives, filters, and mixins. It also covers more advanced topics, such as state management and routing. Whether you are a beginner or an experienced Vue developer, this reference will help you to learn the best practices for building Vue applications.

@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
+      link: /guide/
     - theme: alt
       text: View on GitHub
-      link: /api-examples
+      link: https://github.com/jimoh-sodiq/VuePatterns
 
 features:
   - title: Components

@@ -5,6 +5,14 @@ export default defineConfig({
   title: "Vue Patterns",
   description: "A Collection of useful and vue patterns",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
+    editLink: {
+      pattern: 'https://github.com/jimoh-sodiq/VuePatterns/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
+    lastUpdatedText: 'Last updated',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {

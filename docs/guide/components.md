@@ -1,8 +1,17 @@
 # Components
 
-Vue is a popular JavaScript framework that is used to create single-page applications. It is known for its simplicity and flexibility, and it can be used to build a wide variety of applications. This reference provides a comprehensive overview of common patterns in Vue, including how to use components, directives, filters, and mixins. It also covers more advanced topics, such as state management and routing. Whether you are a beginner or an experienced Vue developer, this reference will help you to learn the best practices for building Vue applications.
+Components are the building blocks of Vue applications. They are reusable pieces of code that can be used to create different UI elements. Components can be nested to create complex layouts, and they can be combined to create new components.
 
-## Here are some of the common patterns that are covered in this reference:
+The components page will contain a comprehensive list of Vue components. The components will be categorized by their functionality / category, and each component will have a detailed description. The page will also include examples of how to use the components and if possible demo within this reference. This page will be a valuable resource for anyone who wants to learn more about Vue components and build up on existing patterns for new components they will be building.
+
+`If a components has different methods of implementation existing on the reference, subsequent methods will be explained in detail below the previous method.`
+
+## Code Example
+
+```example.vue
+
+const hello = ref()
+```
 
 * Reusable Components that are mostly repeated across projects
 * Project Specific Composables that might not be found on VueUse
