@@ -6,20 +6,6 @@ The components page will contain a comprehensive list of Vue components. The com
 
 `If a components has different methods of implementation existing on the reference, subsequent methods will be explained in detail below the previous method.`
 
-## Code Example
-
-```example.vue
-
-const hello = ref()
-```
-
-* Reusable Components that are mostly repeated across projects
-* Project Specific Composables that might not be found on VueUse
-* Package Suggestions that are useful for building Vue applications
-* Global Project Setups that are useful for building Large Vue applications
-* Useful Vue.js Tips
-* Ultimately, this reference is a valuable resource for anyone who wants to learn more about Vue. It provides a comprehensive overview of the most common patterns used in Vue applications, I hope it helps you in building your Amazing Vue Projects.
-
 ## Every Example / Pattern covered will try to include the following:
 
 * Vue.js / Nuxt.js version number
@@ -29,7 +15,32 @@ const hello = ref()
 * Use case
 * Demo ( if possible )
 
-### Code Sample
+## Example
+
+### Demo One
+
+::: code-group
+
+```ts [codeSample1.ts]
+
+function showCodeSample() {
+  return 'Code Sample One'
+}
+```
+
+```ts [codeSample2.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
+
+### Demo Two
 
 ::: code-group
 
