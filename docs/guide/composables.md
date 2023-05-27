@@ -1,42 +1,66 @@
 # Composables
 
-Components are the building blocks of Vue applications. They are reusable pieces of code that can be used to create different UI elements. Components can be nested to create complex layouts, and they can be combined to create new components.
+:::tip
+Always use VueUse
+:::
+Composables are functions that return reusable logic, similar to how Vue 2's mixins worked, but with several improvements. In this documentation, we will explore the concept of Vue.js 3 composables and provide examples to help you understand how to leverage them in your applications.
 
-The components page will contain a comprehensive list of Vue components. The components will be categorized by their functionality / category, and each component will have a detailed description. The page will also include examples of how to use the components and if possible demo within this reference. This page will be a valuable resource for anyone who wants to learn more about Vue components and build up on existing patterns for new components they will be building.
+The composables page will contain a list of reusable functions that are not found in `VueUSe` and are more project specific. It contains logic that might be useful for others.
 
-`If a components has different methods of implementation existing on the reference, subsequent methods will be explained in detail below the previous method.`
-
-## Code Example
-
-```example.vue
-
-const hello = ref()
-```
-
-* Reusable Components that are mostly repeated across projects
-* Project Specific Composables that might not be found on VueUse
-* Package Suggestions that are useful for building Vue applications
-* Global Project Setups that are useful for building Large Vue applications
-* Useful Vue.js Tips
-* Ultimately, this reference is a valuable resource for anyone who wants to learn more about Vue. It provides a comprehensive overview of the most common patterns used in Vue applications, I hope it helps you in building your Amazing Vue Projects.
-
-## Every Example / Pattern covered will try to include the following:
-
-* Vue.js / Nuxt.js version number
-* Dependencies ( necessary for the feature only )
-* Code snippet
-* Plugins or extenstions for ease
-* Use case
-* Demo ( if possible )
 
 ### Code Sample
 
 ::: code-group
 
-```ts [useCodeSample.ts]
+```ts [useCounter.ts]
 
-export const useCodeSample = () => {
-    return 'Code Sample One'
+import { reactive, ref } from 'vue';
+
+export function useCounter() {
+  const count = ref(0);
+  
+  function increment() {
+    count.value++;
+  }
+  
+  function decrement() {
+    count.value--;
+  }
+  
+  return {
+    count,
+    increment,
+    decrement
+  };
 }
+
 ```
+
+```vue [TheCounter.vue]
+<template>
+  <div>
+    <p>Count: {{ count }}</p>
+    <button @click="increment">Increment</button>
+    <button @click="decrement">Decrement</button>
+  </div>
+</template>
+
+<script>
+import { useCounter } from './composables';
+
+export default {
+  setup() {
+    const { count, increment, decrement } = useCounter();
+    
+    return {
+      count,
+      increment,
+      decrement
+    };
+  }
+};
+</script>
+
+```
+
 :::
