@@ -28,3 +28,26 @@ const hello = ref()
 * Plugins or extenstions for ease
 * Use case
 * Demo ( if possible )
+
+### Code Sample
+
+::: code-group
+
+```ts [codeSample1.ts]
+
+function showCodeSample() {
+  return 'Code Sample One'
+}
+```
+
+```ts [codeSample2.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
