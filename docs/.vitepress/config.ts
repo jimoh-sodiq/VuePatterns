@@ -71,6 +71,10 @@ export default defineConfig({
         text: "Global Setups",
         items: [
           {
+            text: "Folder Structures",
+            link: "/global-setups/folder-structures",
+          },
+          {
             text: "Modal System",
             link: "...",
           },
@@ -116,7 +120,6 @@ export default defineConfig({
           { text: "Composables", link: "/guide/composables" },
           { text: "Global Setups", link: "/guide/global-setups" },
           { text: "Packages", link: "/guide/packages" },
-          { text: "Examples", link: "/guide/examples" },
           { text: "Contributing", link: "/guide/contributing" },
         ],
       },
@@ -128,7 +131,6 @@ export default defineConfig({
           { text: "Composables", link: "/guide/composables" },
           { text: "Global Setups", link: "/guide/global-setups" },
           { text: "Packages", link: "/guide/packages" },
-          { text: "Examples", link: "/guide/examples" },
           { text: "Contributing", link: "/guide/contributing" },
         ],
       },

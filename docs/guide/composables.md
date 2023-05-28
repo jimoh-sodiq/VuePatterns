@@ -5,7 +5,7 @@ Always use VueUse 😇
 :::
 Composables are functions that return reusable logic, similar to how Vue 2's mixins worked, but with several improvements. In this documentation, we will explore the concept of Vue.js 3 composables and provide examples to help you understand how to leverage them in your applications.
 
-The composables page will contain a list of reusable functions that are not found in `VueUSe` and are more project specific. It contains logic that might be useful for others.
+The composables page will contain a list of reusable functions that are not found in `VueUse` and are more project specific. It contains logic that might be useful for others. And usually easily implemented 😂
 
 
 ### Code Sample
