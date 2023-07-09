@@ -17,4 +17,9 @@ import UseTableSelection from '../../src/demos/UseTableSelection.vue'
 
 ### Code
 
+::: code-group
+
 <<< ./src/composables/useTableSelection.ts
+<<< ./src/demos/UseTableSelection.vue [Demo.vue]
+
+:::
