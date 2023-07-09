@@ -5,7 +5,7 @@ Components are the building blocks of Vue applications. They are reusable pieces
 The components page will contain a comprehensive list of Vue components. The components will be categorized by their functionality / category, and each component will have a detailed description. The page will also include examples of how to use the components and if possible demo within this reference. This page will be a valuable resource for anyone who wants to learn more about Vue components and build up on existing patterns for new components they will be building.
 
 ::: info
-If a components has different methods of implementation existing on the reference, subsequent methods will be explained in detail below the previous method.
+If a components have different methods of implementation existing on the reference, subsequent methods will be explained in detail below the previous method.
 :::
 
 ## Every Example / Pattern covered will try to include the following:

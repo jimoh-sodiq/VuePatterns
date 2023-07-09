@@ -1,4 +1,10 @@
 import { defineConfig } from "vitepress";
+import {
+  vuePatternComponents,
+  vuePatternComposables,
+  vuePatternGlobalSetups,
+  guideList,
+} from "./utils";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,13 +12,14 @@ export default defineConfig({
   description: "A Collection of useful and vue patterns",
   themeConfig: {
     search: {
-      provider: 'local'
+      provider: "local",
     },
     editLink: {
-      pattern: 'https://github.com/jimoh-sodiq/VuePatterns/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
+      pattern:
+        "https://github.com/jimoh-sodiq/VuePatterns/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
     },
-    lastUpdatedText: 'Last updated',
+    lastUpdatedText: "Last updated",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
@@ -20,93 +27,21 @@ export default defineConfig({
         items: [
           {
             text: "Guide",
-            items: [
-              { text: "Get Started", link: "/guide/" },
-              { text: "Components", link: "/guide/components" },
-              { text: "Composables", link: "/guide/composables" },
-              { text: "Global Setups", link: "/guide/global-setups" },
-              { text: "Packages", link: "/guide/packages" },
-              { text: "Examples", link: "/guide/examples" },
-              { text: "Contributing", link: "/guide/contributing" },
-            ],
+            items: guideList,
           },
         ],
       },
       {
         text: "Components",
-        items: [
-          {
-            text: "Form",
-            items: [
-              { text: "Input", link: "..." },
-              { text: "Textarea", link: "..." },
-            ],
-          },
-          {
-            text: "Layout",
-            items: [
-              { text: "Input", link: "..." },
-              { text: "Textarea", link: "..." },
-            ],
-          },
-          {
-            text: "General",
-            items: [
-              { text: "Accordion One", link: "/components/accordion-one" },
-              { text: "Textarea", link: "..." },
-            ],
-          },
-        ],
+        items: vuePatternComponents,
       },
       {
         text: "Composables",
-        items: [
-          {
-            text: "useTableSelection",
-            link: "...",
-          },
-        ],
+        items: vuePatternComposables,
       },
       {
         text: "Global Setups",
-        items: [
-          {
-            text: "Folder Structures",
-            link: "/global-setups/folder-structures",
-          },
-          {
-            text: "Modal System",
-            link: "...",
-          },
-          {
-            text: "Toast System",
-            link: "...",
-          },
-          {
-            text: "Localization (translation)",
-            link: "...",
-          },
-          {
-            text: "Api System",
-            link: "...",
-          },
-          {
-            text: "Cookie Consent",
-            link: "...",
-          },
-          {
-            text: "Icon Management",
-            link: "...",
-          },
-          {
-            text: "Page Transitions",
-            link: "...",
-          },
-          {
-            text: "Live Theming",
-            link: "...",
-          },
-        ],
+        items: vuePatternGlobalSetups,
       },
       { text: "Packages", link: "..." },
     ],
@@ -114,49 +49,19 @@ export default defineConfig({
     sidebar: [
       {
         text: "Guide",
-        items: [
-          { text: "Get Started", link: "/guide/" },
-          { text: "Components", link: "/guide/components" },
-          { text: "Composables", link: "/guide/composables" },
-          { text: "Global Setups", link: "/guide/global-setups" },
-          { text: "Packages", link: "/guide/packages" },
-          { text: "Contributing", link: "/guide/contributing" },
-        ],
+        items: guideList,
       },
       {
         text: "Components",
-        items: [
-          { text: "Get Started", link: "/guide/" },
-          { text: "Components", link: "/guide/components" },
-          { text: "Composables", link: "/guide/composables" },
-          { text: "Global Setups", link: "/guide/global-setups" },
-          { text: "Packages", link: "/guide/packages" },
-          { text: "Contributing", link: "/guide/contributing" },
-        ],
+        items: vuePatternComponents,
       },
       {
         text: "Composables",
-        items: [
-          { text: "Get Started", link: "/guide/" },
-          { text: "Components", link: "/guide/components" },
-          { text: "Composables", link: "/guide/composables" },
-          { text: "Global Setups", link: "/guide/global-setups" },
-          { text: "Packages", link: "/guide/packages" },
-          { text: "Examples", link: "/guide/examples" },
-          { text: "Contributing", link: "/guide/contributing" },
-        ],
+        items: vuePatternComposables,
       },
       {
         text: "Global Setups",
-        items: [
-          { text: "Get Started", link: "/guide/" },
-          { text: "Components", link: "/guide/components" },
-          { text: "Composables", link: "/guide/composables" },
-          { text: "Global Setups", link: "/guide/global-setups" },
-          { text: "Packages", link: "/guide/packages" },
-          { text: "Examples", link: "/guide/examples" },
-          { text: "Contributing", link: "/guide/contributing" },
-        ],
+        items: vuePatternGlobalSetups,
       },
     ],
 
