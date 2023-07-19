@@ -57,11 +57,11 @@ const toggleState = () => {
         </svg>
       </div>
 
-      <p class="break-all text-[#222823] text-base font-medium">
+      <p class="break-all text-[#222823] dark:text-white text-base font-medium">
         {{ summary }}
       </p>
     </summary>
-    <p class="text-sm text-[#222823]">
+    <p class="text-sm text-[#222823] dark:text-white">
       <slot />
     </p>
   </details>
