@@ -80,7 +80,7 @@ const labelClass = computed(() => {
   } else if (props.error) {
     base += " text-red-500";
   } else {
-    base += " text-gray-700";
+    base += " text-gray-700 dark:text-gray-300";
   }
   return base;
 });
