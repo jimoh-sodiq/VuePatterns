@@ -6,7 +6,7 @@ const checked = ref({ name: "Ade" });
 </script>
 
 <template>
-  <div class="ring p-3 mt-4">
+  <div class="p-3 mt-4">
     <div>
       <p class="underline">Only one Can be selected at a time</p>
       <Radio1

@@ -8,7 +8,7 @@ const customChecked = ref([]);
 </script>
 
 <template>
-  <div class="ring p-3 mt-4">
+  <div class=" p-3 mt-4">
     <div>
       <p class="underline">With default Value</p>
       <Checkbox1
