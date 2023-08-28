@@ -5,6 +5,9 @@ const vuePatternComponents = [
   { text: "Input", link: "/components/input" },
   { text: "Skeleton", link: "/components/skeleton" },
   { text: "Textarea", link: "/components/textarea" },
+  { text: "OTP", link: "/components/otp" },
+
+  // { text: "Modal", link: "/components/modal" },
 ].sort((a, b) => a.text.localeCompare(b.text));
 
 export default vuePatternComponents;

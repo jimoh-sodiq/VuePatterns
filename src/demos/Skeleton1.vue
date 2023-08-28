@@ -2,7 +2,6 @@
 import { ref } from "vue";
 import Skeleton1 from "../components/Skeleton/Skeleton1.vue";
 
-const address = ref("");
 </script>
 
 <template>
