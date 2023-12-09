@@ -10,7 +10,7 @@ const verticalDiv = ref<HTMLDivElement>();
 <template>
   <div class="mt-5">
     <div>
-      <p>Horizontal Scroll {{ horizontalDiv?.clientWidth }}</p>
+      <p>Horizontal Scroll</p>
       <DivScroller1 :element="horizontalDiv" :distance="horizontalDiv?.clientWidth" />
       <div
         ref="horizontalDiv"
