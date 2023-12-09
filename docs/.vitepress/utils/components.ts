@@ -7,6 +7,8 @@ const vuePatternComponents = [
   { text: "Textarea", link: "/components/textarea" },
   { text: "OTP", link: "/components/otp" },
   { text: "Spinner", link: "/components/spinner" },
+  { text: "Div Scroller", link: "/components/div-scroller" },
+
 
   // { text: "Modal", link: "/components/modal" },
 ].sort((a, b) => a.text.localeCompare(b.text));
