@@ -14,12 +14,12 @@ const verticalDiv = ref<HTMLDivElement>();
       <DivScroller1 :element="horizontalDiv" :distance="horizontalDiv?.clientWidth" />
       <div
         ref="horizontalDiv"
-        class="mt-5 w-full overflow-auto bg-gray-700 p-3 flex items-center gap-x-4"
+        class="mt-5 w-full overflow-auto bg-gray-700 p-3 flex items-center gap-x-4 scroll-px-3 snap-x"
       >
         <div
           v-for="n in 30"
           :key="n"
-          class="w-[150px] h-[150px] shrink-0 rounded bg-gray-400 flex items-center justify-center"
+          class="w-[150px] h-[150px] shrink-0 rounded bg-gray-400 flex items-center justify-center snap-start"
         >
           {{ n }}
         </div>
@@ -31,12 +31,12 @@ const verticalDiv = ref<HTMLDivElement>();
     <DivScroller1 :element="verticalDiv" :distance="verticalDiv?.clientHeight" direction="vertical" />
     <div
       ref="verticalDiv"
-      class="mt-5 w-fit overflow-auto bg-gray-700 h-full max-h-[400px] p-3 flex flex-col items-center gap-y-4"
+      class="mt-5 w-fit overflow-auto bg-gray-700 h-full max-h-[400px] p-3 flex flex-col items-center gap-y-4 scroll-py-3 snap-y"
     >
       <div
         v-for="n in 15"
         :key="n"
-        class="w-[150px] h-[150px] shrink-0 rounded bg-gray-400 flex items-center justify-center"
+        class="w-[150px] h-[150px] shrink-0 rounded bg-gray-400 flex items-center justify-center snap-start"
       >
         {{ n }}
       </div>
