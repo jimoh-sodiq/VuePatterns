@@ -17,7 +17,7 @@ const pageSize = ref(50)
             <p>Total Page: </p><input type="number" :min="1" v-model="totalPages"
                 class="w-[200px] ring-[1px] ring-green-500 rounded px-2 py-1" />
         </div>
-        <div class="mx-auto w-fit">
+        <div class="mx-auto w-fit mt-5">
             <Pagination1 @changePage="(page) => currentPage = page" :currentPage="currentPage" :pageSize="pageSize"
                 :totalPages="totalPages" />
         </div>
