@@ -9,6 +9,7 @@ const vuePatternComponents = [
   { text: "Spinner", link: "/components/spinner" },
   { text: "Div Scroller", link: "/components/div-scroller" },
   { text: "Circular Progress Bar", link: "/components/circular-progress" },
+  { text: "Pagination", link: "/components/pagination" },
 
   // { text: "Modal", link: "/components/modal" },
 ].sort((a, b) => a.text.localeCompare(b.text));
