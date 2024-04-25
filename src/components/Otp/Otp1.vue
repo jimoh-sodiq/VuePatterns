@@ -91,6 +91,13 @@ function handleSpaceBar(e: KeyboardEvent, index: number) {
     focusNext(index);
   }
 }
+function handlePaste ( e: ClipboardEvent, index: number){
+  e.preventDefault();
+  inputRefsHolderCopy.value = e.clipboardData?.getData('text').trim().split('') as any[]
+  inputRefsHolderCopy.value.splice(props.inputCount)
+  focusNext(index)
+  emit("update:modelValue", otpValue.value);
+}
 
 watchEffect(() => {
   const updatedOtpList = props.modelValue?.slice(0, props.inputCount);
@@ -119,6 +126,7 @@ onMounted(() => {
       @input="(e) => handleInput(e, index)"
       @keyup="(e) => handleKeyUp(e, index)"
       @keydown.space="(e) => handleSpaceBar(e, index)"
+      @paste="(e) => handlePaste(e, index)"
       v-for="(input, index) in inputCount"
       :key="input"
       :placeholder="placeholder"
