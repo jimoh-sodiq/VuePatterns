@@ -18,16 +18,16 @@ hero:
 
 features:
   - title: Components
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: A collection of common reusable component
     icon: 🧩
   - title: Composables
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: A collection of useful composables
     icon: 🔁
   - title: Global Project Patterns
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Instructions on how to organize a vue/nuxt codebase
     icon: 🎪
   - title: Package Suggestions
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: A collection of useful packages for simplifying things
     icon: 📦️
 ---
 
