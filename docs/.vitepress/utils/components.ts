@@ -11,6 +11,8 @@ const vuePatternComponents = [
   { text: "Circular Progress Bar", link: "/components/circular-progress" },
   { text: "Pagination", link: "/components/pagination" },
   { text: "Image Upload", link: "/components/image-upload" },
+  { text: "Random Selector", link: "/components/random-selector" },
+  
   // { text: "Select", link: "/components/select" },
 
   // { text: "Modal", link: "/components/modal" },
