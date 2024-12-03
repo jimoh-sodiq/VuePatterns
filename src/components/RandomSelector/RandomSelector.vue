@@ -169,7 +169,7 @@ async function  spin(): Promise<boolean> {
 	 width: 100%;
 	 text-align: center;
 	 position: relative;
-     background-color: darkgray;
+     background-color: #6b7280;
      border-radius: 8px;
 }
 
