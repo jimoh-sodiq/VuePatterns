@@ -9,7 +9,7 @@ import Countdown from "../../src/demos/Countdown.vue"
 
 # A Countdown Component
 
-This page Show an Example of a Countdown component.
+This page shows an example of a Countdown component.
 
 ## First Pattern
 
