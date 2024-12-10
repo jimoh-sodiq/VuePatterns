@@ -9,7 +9,7 @@ const accuracy = ref(4)
 <template>
     <div class="p-3 mt-4">
 
-        <p>Countdown Ends in: </p>
+        <p>Countdown ends in: </p>
 
         <div class="bg-gray-300 p-4 rounded font-medium text-gray-700">
             <Countdown :endDate="new Date(endDate)" :accuracy="accuracy" />
