@@ -12,7 +12,7 @@ const vuePatternComponents = [
   { text: "Pagination", link: "/components/pagination" },
   { text: "Image Upload", link: "/components/image-upload" },
   { text: "Random Selector", link: "/components/random-selector" },
-  {text: "Countdown", link: "/components/countdown"},
+  // {text: "Countdown", link: "/components/countdown"},
   
   // { text: "Select", link: "/components/select" },
 
