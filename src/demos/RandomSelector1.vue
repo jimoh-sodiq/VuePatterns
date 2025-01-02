@@ -4,7 +4,7 @@ import RandomSelector from '../components/RandomSelector/RandomSelector.vue';
 
 const selectedWinner = ref()
 
-const names = ['Jimoh', 'Ayomide', 'Hikmah', 'Abdul', 'Jeff', 'Daniel', 'Adekunle', 'Joe', 'Janet', 'Aji']
+const names = ['Jimoh', 'Ayomide', 'Hikmah', 'Abdul', 'Jeff', 'Ade', 'Adekunle', 'Joe', 'Kromate', 'Aji']
 </script>
 
 <template>

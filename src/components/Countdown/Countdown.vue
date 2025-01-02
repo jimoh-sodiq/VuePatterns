@@ -7,7 +7,7 @@
   </template>
   
   <script setup lang="ts">
-  import {ref, computed, onBeforeUnmount, watch} from "vue";
+  import {ref, computed, onUnmounted, watch} from "vue";
   
   
   const emit = defineEmits(['remaining-seconds', 'countdown-ended'])
@@ -83,7 +83,7 @@
     emit('remaining-seconds', Math.trunc((props.endDate.getTime() - now.value.getTime()) / 1000) )
   }, {immediate: true})
   
-  onBeforeUnmount(() => {
+  onUnmounted(() => {
     clearInterval(timer.value);
   })
   
